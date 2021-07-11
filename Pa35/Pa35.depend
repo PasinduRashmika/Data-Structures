@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1620980248 source:c:\users\pasindu o positive\desktop\temparary\pa35\main.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+

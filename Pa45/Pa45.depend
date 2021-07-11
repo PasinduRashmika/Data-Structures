@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1621239055 source:c:\users\pasindu o positive\desktop\temparary\pa45\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
