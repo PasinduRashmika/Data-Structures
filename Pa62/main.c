@@ -2,23 +2,26 @@
 #include <stdlib.h>
 #define SIZE 10
 
-int bubble(int a[]){
+int selection(int a[]){
 
-    int temp,i,j;
-
-    for(i=SIZE-1;i>=0;i--){
+    int temp,min,i,j;
+    for(i=0;i<SIZE-1;i++){
+        min=i;
         for(j=0;j<i;j++){
-            if(a[j]>=a[j+1]){
-                temp=a[j];
-                a[j]=a[j+1];
-                a[j+1]=temp;
+            if(a[min]<a[j]){
+                min=j;
             }
         }
+        temp=a[min];
+        a[min]=a[i];
+        a[i]=temp;
     }
+
     for(i=0;i<SIZE;i++){
         printf("%d\t",a[i]);
     }
 }
+
 
 int main()
 {
@@ -27,5 +30,5 @@ int main()
 
 
 
-    bubble(a);
+    selection(a);
 }
